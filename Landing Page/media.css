@@ -1,0 +1,29 @@
+@media screen and (max-width: 760px){ /* traduzindo: quando o site chegar na largura de 760px, vai ser aplicado toda modificação que vamos colocar abaixo */
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    form{
+        margin: 0 auto;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+}

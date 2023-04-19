@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: sans-serif;
+    max-width: 1200px; /* "max-width: " = permite que os elementos fique fixo na tela, independente do monitor do usuário */ 
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex; 
+    flex-direction: row; /* "flex-direction: row" = deixa o conteúdo em formato de linha, se fosse "flex-direction: column" = o conteúdo ficaria em formato de coluna */
+    justify-content: space-between; /* "justify-content: space-around" = cria um espaço ao redor do elemento, já o "justify-content: space-between" = cria um espaço entre os elementos */
+    align-items: center; /*  "align-items: center" = centraliza todo o conteúdo que está dentro da TAG */
+}
+
+#title{ /* é usado o "#" no começo, pois estamos trabalhando com "id" no HTML, se fosse "class" no lugar da "id", usaríamos o "." */
+    flex-direction: column;
+    line-height: 10px; /* "line-heigth: " = altera o espaço de uma linha da outra */
+}
+
+li{
+    display: inline-block; /* "display: inline-block" = deixa os elementos com o padrão de texto comum e no formato de linha */
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.3s all; /* transition: " = efeito de transição do mouse sob o link */
+}
+
+#btn-destaque{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px; /* "border-radius: " = altera o traçado da borda que aplicamos acima */
+}
+
+#btn-destaque:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 10px;
+}
+
+span{
+    color: rgb(132, 14, 201);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+}
+
+img{
+    width: 600px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{ 
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: 700;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+}
