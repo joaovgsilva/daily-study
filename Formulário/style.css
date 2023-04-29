@@ -1,6 +1,6 @@
 body{
     font-family: arial;
-    background-image: linear-gradient(to right, rgb(20, 147, 200), rgb(17,54,71));
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
 }
 
 .box{
@@ -8,7 +8,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 1rem;
     border-radius: 1rem;
     width: 20%;
@@ -25,4 +25,56 @@ legend{
     text-align: center;
     background-color: dodgerblue;
     border-radius: 8px;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-user{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    letter-spacing: 2px; /* "letter-spacing: " = faz com que as letras dentro do elemento dê um espaço dentre elas */
+}
+
+.label-input{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none; /* "pointer-events: none" = significa que qualquer lugar onde clicarmos dentro do "input" será executado  */
+    transition: .5s;
+}
+
+.input-user:focus ~ .label-input /* = quando o ".input-user" for receber o click do mouse (:focus), o ".label-input" ganhará uma animação */ , .input-user:valid ~ .label-input{ /* = quando o usuário estiver interagindo com o elemento (.input-user), o ".label-input" vai continuar com a mesma animação */
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+#birth-date{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
 }
