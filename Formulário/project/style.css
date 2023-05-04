@@ -1,6 +1,7 @@
 :root{
     --color-backgroundOne: rgb(0, 92, 197), rgb(90, 20, 220);
     --color-backgroundTwo: rgba(0, 0, 0, 0.6);
+    --color-backgroundThree: rgb(0, 80, 172), rgb(80, 19, 195);
     --color-blue: dodgerblue;
     --color-white: white;
 }
@@ -11,5 +12,77 @@ body{
 }
 
 .box{
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-backgroundTwo);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--color-white);
+    width: 20%;
+}
+
+fieldset{
+    border: 3px solid var(--color-blue);
+}
+
+legend{
+    border: 1px solid var(--color-blue);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--color-blue);
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+}
+
+.user-input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+    outline: none;
+    color: var(--color-white);
+    font-size: 1rem;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.input-label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.user-input:focus ~ .input-label, .user-input:valid ~ .input-label{
+    top: -20px;
+    font-size: 12px;
+    color: var(--color-blue);
+}
+
+#birth-date{
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#submit{
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    color: var(--color-white);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
 }
