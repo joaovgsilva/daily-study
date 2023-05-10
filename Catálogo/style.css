@@ -134,7 +134,7 @@ nav ul button:hover{
 
 /* Product Catalog */
 
-section .catolog{
+section .catalog{
     width: 100vw;
     padding: 100px;
 }
@@ -156,7 +156,7 @@ section .filter-card{
     height: 50px;
     border: none;
     border-radius: 4px 0px 0px 4px;
-    text-indent: 10px;
+    text-indent: 10px; /* "text-indent: ;" = espaçamento horizontal a ser deixado antes do início da primeira linha do texto */ 
 }
 
 .search-button{
