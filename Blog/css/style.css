@@ -44,7 +44,7 @@ ul{
     justify-content: center;
     align-items: center;
     margin: 20px 0px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* "flex-wrap:" = define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas | "flex-wrap: wrap" = permite quebrar varias linhas / "flex-wrap: nowrap" = deixa tudo em uma única linha*/
 }
 
 .blog-box{
@@ -91,11 +91,11 @@ ul{
 .blog-text p{
     color: #9b9b9b;
     font-size: 0.9rem;
-    display: -webkit-box;
+    display: -webkit-box; /* = propriedade que ajuda no mecanismo de renderização do Chrome e o Safari */
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: hidden; /* = esconde uma parte do elemento para que ele não passe do tamanho determinado */
+    text-overflow: ellipsis; /* = serve para especificar qual símbolo vai ser usado para indicar reticências (três pontos); por padrão é utilizado os "..." */
     margin: 20px 0px;   
 }
 
