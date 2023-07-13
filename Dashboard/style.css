@@ -138,7 +138,7 @@ aside .top{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 1.4rem;
+    margin-top: 3.2rem;
 }
 
 aside .logo{
@@ -235,7 +235,7 @@ main .date{
     display: inline-block;
     background: var(--color-ligth);
     border-radius: var(--border-radius-1);
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 0.5rem 1.6rem;
 }
 
@@ -387,7 +387,7 @@ main .recent-orders a{
 /* ===== RIGHT ===== */
 
 .rigth{
-    margin-top: 1.4rem;
+    margin-top: 2.1rem;
 }
 
 .rigth .top{
