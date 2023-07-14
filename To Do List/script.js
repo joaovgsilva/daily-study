@@ -50,3 +50,12 @@ function removeItem(data){
 }
 
 showValues()
+
+/*
+sending with enter: */
+document.addEventListener("keypress", function(e){
+    if(e.key === "Enter"){
+        const btnAdd = document.querySelector("#btn-new-task");
+        btnAdd.click();
+    }
+})
