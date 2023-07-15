@@ -323,8 +323,8 @@ main .insights svg circle{
 }
 
 main .insights .sales svg circle{
-    stroke-dashoffset: -30;
-    stroke-dasharray: 200;
+    stroke-dashoffset: 5;
+    stroke-dasharray: 190;
 }
 
 main .insights .expenses svg circle{
