@@ -32,3 +32,8 @@ Orders.forEach(order => {
     tr.innerHTML = trContent;
     document.querySelector('table tbody').appendChild(tr);
 })
+
+// ===== MODIFIELD INPUT DATE =====
+
+const dateControl = document.querySelector('input[type="date"]');
+dateControl.value = '2023-07-15';
