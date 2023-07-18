@@ -1,6 +1,13 @@
+:root{
+    --color-backgroud: rgb(34, 34, 34);
+    --color-white: white;
+    --color-orange: orange;
+    --color-purple: rgb(132, 14, 201);
+}
+
 body{
-    background-color: rgb(34, 34, 34);
-    color: white;
+    background-color: var(--color-backgroud);
+    color: var(--color-white);
     font-family: sans-serif;
     max-width: 1200px; /* "max-width: " = permite que os elementos fique fixo na tela, independente do monitor do usuário */ 
     margin: 0 auto;
@@ -25,22 +32,22 @@ li{
 }
 
 a{
-    color: white;
+    color: var(--color-white);
 }
 
 a:hover{
-    color: rgb(132, 14, 201);
+    color: var(--color-orange);
     transition: 0.3s all; /* transition: " = efeito de transição do mouse sob o link */
 }
 
 #btn-destaque{
-    border: 2px solid rgb(132, 14, 201);
+    border: 2px solid var(--color-orange);
     padding: 10px;
     border-radius: 15px; /* "border-radius: " = altera o traçado da borda que aplicamos acima */
 }
 
 #btn-destaque:hover{
-    background-color: rgb(132, 14, 201);
+    background-color: var(--color-orange);
     color: white;
 }
 
@@ -60,7 +67,7 @@ h2{
 }
 
 span{
-    color: rgb(132, 14, 201);
+    color: var(--color-orange);
 }
 
 p{
@@ -69,7 +76,7 @@ p{
 }
 
 img{
-    width: 600px;
+    width: 450px;
 }
 
 form{
@@ -81,7 +88,7 @@ form{
 form [type="submit"]{ 
     height: 50px;
     width: 50%;
-    background-color: rgb(132, 14, 201);
+    background-color: var(--color-orange);
     color: white;
     font-weight: 700;
 }
