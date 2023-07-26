@@ -7,133 +7,144 @@
         <meta name="description" content="Portfólio Pessoal">
         <meta name="keywords" content="html5, css3, javascript">
         <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="./documents/images/logo.png">
         <link rel="stylesheet" href="./documents/fontawesome-free-6.4.0-web/css/all.css">
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./media.css">
     </head>
     <body>
-        <div class="container">
-            <aside>
-                <div class="top">
-                    <div class="logo">
-                        <img src="./documents/images/logo.png" alt="logo">
-                        <h2>Olá!<br>
-                            Me chamo <strong>João</strong>,<br>
-                            Front-End Developer</h2>
+        <header>
+            <div class="profile">
+                <img src="./documents/images/picture.jpg" alt="person">
+                <h1>João Vitor Gomes da Silva</h1>
+                <div class="social-icons">
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i></a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- ===== END OF PROFILE ===== -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" class="active">
+                        <i class="fa-solid fa-house"></i> Home
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-user"></i> Sobre mim
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-gears"></i> Habilidades
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-server"></i> Experiências
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-envelope"></i> Contato
+                    </a></li>
+                </ul>
+            </nav>
+            <!-- ===== END OF MENU ===== -->
+            <div class="footer">
+                <p>Copyright &copy; 2023<br>Designed By <a href="#" target="_blank">DevJota</a></p>
+            </div>
+        </header>
+        <!-- ===== END OF HEADER ===== -->
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+        <!-- ===== END OF MOBILE MENU TOGGLE ===== -->
+        <main>
+            <div class="main-about">
+                <h2>SOBRE MIM</h2>
+                <p>Sou um desenvolvedor Front-End apaixonado por projetar e codificar.<br>
+                Minha expecialidade é a criação de interfaces e funcionalidades para aplicativos da web utilizando HTML, CSS, JavaScript, entre outras tecnologias.<br>
+                Você pode conhecer mais sobre o meu perfil e o meu trabalho navegando pela website.</p>
+                <img src="./documents/images/picture.jpg" alt="person">
+            </div>
+            <!-- ===== END OF ABOUT ===== -->
+            <div class="main-skills">
+                <h2>HABILIDADES</h2>
+                <div class="skill-html">
+                    <i class="fa-brands fa-html5"></i>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>91%</p>
+                        </div>
                     </div>
                 </div>
-
-                <nav>
-                    <div class="menu">
-                        <ul class="menu-btn">
-                            <li><a href="#">SOBRE MIM</a></li>
-                            <li><a href="#">HABILIDADES</a></li>
-                            <li><a href="#">EXPERIÊNCIA</a></li>
-                            <li><a href="#">PROJETOS</a></li>
-                        </ul>
-                        <ul class="menu-icons">
-                            <a href="#">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </ul>
+                <!-- ===== END OF HTML ===== -->
+                <div class="skill-css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>81%</p>
+                        </div>
                     </div>
-                </nav>
-            </aside>
-            <!-- ===== END OF ASIDE ===== -->
-            <main>
-                <div class="main-about">
-                    <h1>SOBRE MIM</h1>
-                    <p>Sou um desenvolvedor Front-End apaixonado por projetar e codificar.<br>
-                    Minha expecialidade é a criação de interfaces e funcionalidades para aplicativos da web utilizando HTML, CSS, JavaScript, entre outras tecnologias.<br>
-                    Você pode conhecer mais sobre o meu perfil e o meu trabalho navegando pela website.</p>
-                    <img src="./documents/images/picture.jpg" alt="person">
                 </div>
-                <!-- ===== END OF ABOUT ===== -->
-                <div class="main-skills">
-                    <h1>HABILIDADES</h1>
-                    <div class="skill-html">
+                <!-- ===== END OF CSS ===== -->
+                <div class="skill-js">
+                    <i class="fa-brands fa-js"></i>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>63%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===== END OF JS ===== -->
+                <div class="skill-git">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>83%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===== END OF GIT ===== -->
+                <div class="skill-github">
+                    <i class="fa-brands fa-github"></i>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>83%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===== END OF GITHUB ===== -->
+            </div>
+            <!-- ===== END OF SKILL ===== -->
+            <div class="main-experience">
+                <h2>EXPERIÊNCIA</h2>
+                <div class="job">
+                    <h2>Freelancer</h2>
+                    <h4>Desenvolvimento Front-End</h4>
+                    <h5>Freelancer</h5>
+                    <p>Atuo como Desenvolvedor Front-End freelancer com paixão por criar experiências digitais incríveis e funcionais</p>
+                    <h3>Tecnologias</h3>
+                    <div class="tech-icons">
                         <i class="fa-brands fa-html5"></i>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>91%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ===== END OF HTML ===== -->
-                    <div class="skill-css">
                         <i class="fa-brands fa-css3-alt"></i>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>81%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ===== END OF CSS ===== -->
-                    <div class="skill-js">
                         <i class="fa-brands fa-js"></i>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>63%</p>
-                            </div>
-                        </div>
                     </div>
-                    <!-- ===== END OF JS ===== -->
-                    <div class="skill-git">
-                        <i class="fa-brands fa-git-alt"></i>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>83%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ===== END OF GIT ===== -->
-                    <div class="skill-github">
-                        <i class="fa-brands fa-github"></i>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>83%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ===== END OF GITHUB ===== -->
+                    <small>Abr 2023 - Presente</small>
                 </div>
-                <!-- ===== END OF SKILL ===== -->
-                <div class="main-experience">
-                    <h1>EXPERIÊNCIA</h1>
-                    <div class="job">
-                        <h2>Freelancer</h2>
-                        <h4>Desenvolvimento Front-End</h4>
-                        <h5>Freelancer</h5>
-                        <p>Atuo como Desenvolvedor Front-End freelancer com paixão por criar experiências digitais incríveis e funcionais</p>
-                        <h3>Tecnologias</h3>
-                        <div class="tech-icons">
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-js"></i>
-                        </div>
-                        <small>Abr 2023 - Presente</small>
-                    </div>
-                </div>
-                <!-- ===== END OF EXPERIENCE ===== -->       
-            </main>
-            <!-- ===== END OF MAIN ===== -->
-        </div>
+            </div>
+            <!-- ===== END OF EXPERIENCE ===== -->       
+        </main>
+        <!-- ===== END OF MAIN ===== -->
+        <script src="./script.js"></script>
     </body>
 </html>

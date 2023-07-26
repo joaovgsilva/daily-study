@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --color-primary: #f58232;
+    --color-background-dark: #181a1e;
+    --color-background-dark-two: #2f3238;
+    --color-background-ligth: #f6f6f9;
+    --color-background-ligth-two: #ebebeb;
+    --color-gray: #363949;
+    --color-white: #fff;
+    --color-info: #7d8da1;
+    --color-html: #e44d26;
+    --color-css: #264de4;
+    --color-js: #f7df1e;
+    --color-git: #f05133;
+    --color-github: #111;
+
+    --card-border-radius: 2rem;
+
+    --card-padding: 1.8rem;
+
+    --box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins;
+}
+
+header{
+    height: 100vh;
+    width: 400px;
+    padding: 15px 30px;
+    background-color: var(--color-background-dark);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: .4s;
+    z-index: 99;
+}
+
+/* ===== START PROFILE ===== */
+
+header .profile{
+    text-align: center;
+    margin: 10px 0;
+}
+
+header .profile img{
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid var(--color-background-dark-two);
+}
+
+header .profile h1{
+    color: var(--color-white);
+    font-weight: 600;
+    margin: 10px;
+}
+
+header .profile .social-icons a{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-background-dark-two);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 49px;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    transition: .4s;
+    margin: 10px 2px;
+}
+
+header .profile .social-icons a:hover{
+    background-color: var(--color-primary);
+}
+
+/* ===== START MENU ===== */
+
+header .menu{
+    margin: 2rem 0;
+}
+
+header .menu ul li a{
+    display: inline-block;
+    padding: 8px 10px;
+    margin: 8px 0;
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+header .menu ul li a i{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: .4s;
+}
+
+header .menu ul li a:hover i{
+    color: var(--color-primary);
+}
+
+header .menu ul li .active i{
+    color: var(--color-primary);
+}
+
+/* ===== START FOOTER ===== */
+
+header .footer{
+    text-align: center;
+    color: var(--color-info);
+    font-size: 12px;
+    letter-spacing: .6px;
+    padding: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+    width: 400px;
+    background-color: var(--color-background-dark);
+}
+
+header .footer p a{
+    color: var(--color-primary);
+}
+
+/* ===== START MOBILE MENU TOGGLE ===== */
+#menu-btn{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-align: center;
+    line-height: 41px;
+    border-radius: 50%;
+    z-index: 999;
+    display: none;
+}
