@@ -9,7 +9,7 @@
     --color-background-ligth-two: #ebebeb;
     --color-gray: #363949;
     --color-white: #fff;
-    --color-ligth: rgba(132, 139, 200, 0.18);
+    --color-ligth: rgba(132, 139, 200, 0.075);
     --color-info: #7d8da1;
     --color-html: #e44d26;
     --color-css: #264de4;
@@ -18,8 +18,6 @@
     --color-github: #111;
 
     --card-border-radius: 2rem;
-
-    --card-padding: 1.8rem;
 
     --box-shadow: 0 2rem 3rem var(--color-ligth);
 }
@@ -222,13 +220,13 @@ main{
     height: 4px;
     background-color: var(--color-primary);
     border-radius: 3px;
+    margin-bottom: 1rem;
 }
 
 #about .divider ~ p{
     color: var(--color-gray);
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 1rem;
 }
 
 #about .about-col{
@@ -302,4 +300,55 @@ address{
 
 #about .about-col .info-col .icon-list-col .icon-list ul li span a:hover{
     color: var(--color-primary);
+}
+
+/* ===== START SKILL SECTION ===== */
+#skills{
+    background-color: var(--color-background-ligth);
+    padding: 4rem 2rem;
+}
+
+#skills .insights{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.6rem;
+}
+
+#skills .insights > div{
+    background-color: var(--color-white);
+    margin-top: 10px;
+    padding: 3rem 0;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills .insights > div i{
+    font-size: 3rem;
+    color: var(--color-html);
+}
+
+#skills .insights > div.skill-css i{
+    color: var(--color-css);
+}
+
+#skills .insights > div.skill-js i{
+    color: var(--color-js);
+}
+
+#skills .insights > div.skill-git i{
+    color: var(--color-git);
+}
+
+#skills .insights > div.skill-github i{
+    color: var(--color-github);
+}
+
+#skills .insights > div p{
+    margin-top: 10px;
+    font-weight: 600;
 }

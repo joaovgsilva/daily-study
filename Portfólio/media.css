@@ -25,6 +25,11 @@
     main{
         margin-left: 0;
     }
+
+    #skills .insights{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media only screen and (max-width: 670px){
@@ -78,5 +83,10 @@
     #about .about-col .info-col .icon-list-col .icon-list ul li strong , 
     #about .about-col .info-col .icon-list-col .icon-list ul li span{
         font-size: .8rem;
+    }
+
+    #skills .insights{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
