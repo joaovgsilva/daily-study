@@ -20,4 +20,63 @@
     .mobile-menu-active header .footer{
         left: 0;
     }
+
+    /* ===== MAIN ===== */
+    main{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 670px){
+    #home .home-row h1{
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 3rem;
+    }
+
+    #home .home-row p{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .sub-heading{
+        font-size: 1.5rem;
+    }
+
+    #about .divider ~ p{
+        font-size: .8rem;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+
+    #about .about-col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about .about-col .img-col img{
+        width: 70%;
+        margin-bottom: .5rem;
+    }
+
+    #about .about-col .info-col h3{
+        font-size: 1.3rem;
+    }
+
+    #about .about-col .info-col p{
+        font-size: .7rem;
+        letter-spacing: .3px;
+    }
+
+    #about .about-col .info-col .icon-list-col{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #about .about-col .info-col .icon-list-col .icon-list ul li i , 
+    #about .about-col .info-col .icon-list-col .icon-list ul li strong , 
+    #about .about-col .info-col .icon-list-col .icon-list ul li span{
+        font-size: .8rem;
+    }
 }

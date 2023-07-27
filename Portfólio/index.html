@@ -16,7 +16,7 @@
         <header>
             <div class="profile">
                 <img src="./documents/images/picture.jpg" alt="person">
-                <h1>João Vitor Gomes da Silva</h1>
+                <h1>Dev<span>Jota</span></h1>
                 <div class="social-icons">
                     <a href="#">
                         <i class="fa-brands fa-github"></i></a>
@@ -54,16 +54,50 @@
         <i class="fa-solid fa-bars" id="menu-btn"></i>
         <!-- ===== END OF MOBILE MENU TOGGLE ===== -->
         <main>
-            <div class="main-about">
-                <h2>SOBRE MIM</h2>
+            <section id="home">
+                <div class="home-row">
+                    <h1><span>Olá</span>, me chamo<br> João Vitor Gomes da Silva</h1>
+                    <p>Sou <span class="auto-input"></span></p>
+                </div>
+            </section>
+            <!-- ===== END OF HOME ===== -->
+            <section id="about">
+                <h2 class="sub-heading">Sobre mim</h2>
+                <div class="divider"></div>
                 <p>Sou um desenvolvedor Front-End apaixonado por projetar e codificar.<br>
-                Minha expecialidade é a criação de interfaces e funcionalidades para aplicativos da web utilizando HTML, CSS, JavaScript, entre outras tecnologias.<br>
-                Você pode conhecer mais sobre o meu perfil e o meu trabalho navegando pela website.</p>
-                <img src="./documents/images/picture.jpg" alt="person">
-            </div>
+                Minha expecialidade é a criação de interfaces e funcionalidades para aplicativos da web utilizando HTML, CSS, JavaScript, entre outras tecnologias.
+                <div class="about-col">
+                    <div class="img-col">
+                        <img src="./documents/images/profile.jpg" alt="person">
+                    </div>
+                    <div class="info-col">
+                        <h3>Desenvolvedor Front-End!</h3>
+                        <p>Você pode conhecer mais sobre o meu perfil e o meu trabalho navegando pela website.</p>
+                        <div class="icon-list-col">
+                            <!-- ===== LEFT SIDE LIST ===== -->
+                            <address class="icon-list">
+                                <ul>
+                                    <li><i class="fa-solid fa-angle-right"></i> <strong>Cidade:</strong> <span>Mogi das Cruzes, São Paulo</span></li>
+                                    <li><i class="fa-solid fa-angle-right"></i> <strong>Idade:</strong> <span>21 anos</span></li>
+                                    <li><i class="fa-solid fa-angle-right"></i> <strong>Telefone:</strong> <span>+55 11 97632-9131</span></li>
+                                </ul>
+                            </address>
+                            <!-- ===== RIGHT SIDE LIST ===== -->
+                            <address class="icon-list">
+                                <ul>
+                                    
+                                    <li><i class="fa-solid fa-angle-right"></i> <strong>E-mail:</strong> <span>joaovgsilva20@gmail.com</span></li>
+                                    <li><i class="fa-solid fa-angle-right"></i> <strong>GitHub:</strong> <span><a href="https://github.com/joaovgsilva" target="_blank">github.com/joaovgsilva</a></span></li>
+                                    <li><i class="fa-solid fa-angle-right"></i> <strong>Linkedin:</strong> <span><a href="https://www.linkedin.com/in/joaovgsilva/" target="_blank">linkedin.com/in/joaovgsilva</a></span></li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- ===== END OF ABOUT ===== -->
-            <div class="main-skills">
-                <h2>HABILIDADES</h2>
+            <div id="skills">
+                <h2 class="sub-heading">HABILIDADES</h2>
                 <div class="skill-html">
                     <i class="fa-brands fa-html5"></i>
                     <div class="progress">
@@ -126,10 +160,10 @@
                 <!-- ===== END OF GITHUB ===== -->
             </div>
             <!-- ===== END OF SKILL ===== -->
-            <div class="main-experience">
-                <h2>EXPERIÊNCIA</h2>
+            <div class="experience">
+                <h2 class="sub-heading">EXPERIÊNCIA</h2>
                 <div class="job">
-                    <h2>Freelancer</h2>
+                    <h3>Freelancer</h3>
                     <h4>Desenvolvimento Front-End</h4>
                     <h5>Freelancer</h5>
                     <p>Atuo como Desenvolvedor Front-End freelancer com paixão por criar experiências digitais incríveis e funcionais</p>
@@ -145,6 +179,8 @@
             <!-- ===== END OF EXPERIENCE ===== -->       
         </main>
         <!-- ===== END OF MAIN ===== -->
+        <!-- ===== TYPED.JS FILE (FOR TYPING EFFECT) ===== -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="./script.js"></script>
     </body>
 </html>

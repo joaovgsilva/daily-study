@@ -5,3 +5,12 @@ menuBtn.addEventListener('click', function(e){
     document.querySelector('body').classList.toggle('mobile-menu-active');
     this.classList.toggle('fa-xmark');
 })
+
+// ===== TYPING EFFECT =====
+let typed = new Typed('.auto-input',{
+    strings: ['Desenvolvedor Front-End!', 'Freelancer!'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 2000,
+    loop: true,
+})
