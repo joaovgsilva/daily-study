@@ -206,6 +206,7 @@ main{
 /* ===== START ABOUT SECTION ===== */
 #about{
     padding: 4rem 2rem;
+    background-color: var(--color-white);
 }
 
 /* ===== GLOBAL SUB HEADING  ===== */
@@ -304,8 +305,8 @@ address{
 
 /* ===== START SKILL SECTION ===== */
 #skills{
-    background-color: var(--color-background-ligth);
     padding: 4rem 2rem;
+    background-color: var(--color-background-ligth);
 }
 
 #skills .insights{
@@ -362,6 +363,7 @@ address{
 
 #skills .insights > div p span{
     font-size: 15px;
+    color: var(--color-gray);
 }
 
 #skills .insights > div .skill-outter-line{
@@ -376,4 +378,85 @@ address{
     height: 10px;
     background-color: var(--color-html);
     border-radius: 15px;
+}
+
+#skills .insights > div.skill-css .skill-outter-line .skill-inner-line{
+    background-color: var(--color-css);
+}
+
+#skills .insights > div.skill-js .skill-outter-line .skill-inner-line{
+    background-color: var(--color-js);
+}
+
+#skills .insights > div.skill-git .skill-outter-line .skill-inner-line{
+    background-color: var(--color-git);
+}
+
+#skills .insights > div.skill-github .skill-outter-line .skill-inner-line{
+    background-color: var(--color-github);
+}
+
+/* ===== START EXPERIENCE SECTION ===== */
+
+#experience{
+    padding: 4rem 2rem;
+    background-color: var(--color-white);
+}
+
+#experience .job{
+    padding: 0px 20px 0 20px;
+    margin: 20px 0;
+    border-left: 2px solid var(--color-primary);
+    position: relative;
+}
+
+#experience .job h3{
+    font-size: 1.5rem;
+}
+
+#experience .job h4{
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+}
+
+#experience .job h5{
+    font-size: .9rem;
+    color: var(--color-gray);
+    margin-bottom: 1.3rem;
+}
+
+#experience .job h5 small{
+    color: var(--color-info);
+    font-size: .7rem;
+    letter-spacing: .5px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#experience .job p{
+    color: var(--color-gray);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.2rem 0;
+}
+
+#experience .job .tech-icons{
+    font-size: 2.5rem;
+}
+
+#experience .job .tech-icons{
+    font-size: 2.5rem;
+}
+
+#experience .job .tech-icons .fa-html5{
+    color: var(--color-html);
+}
+
+#experience .job .tech-icons .fa-css3-alt{
+    color: var(--color-css);
+}
+
+#experience .job .tech-icons .fa-js{
+    color: var(--color-js);
 }
