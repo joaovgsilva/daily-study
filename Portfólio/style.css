@@ -315,6 +315,11 @@ address{
     gap: 1.6rem;
 }
 
+#skills .insights:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(.9);
+}
+
 #skills .insights > div{
     background-color: var(--color-white);
     margin-top: 10px;
@@ -327,16 +332,55 @@ address{
     justify-content: center;
     transition: .35s;
     cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
 }
 
-#skills .insights:hover > :not(:hover){
-    opacity: .4;
-    transform: scale(.9);
+#skills .insights > div::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 350px;
+    background: var(--color-html);
+    animation: animate 7s linear infinite;
+}
+
+#skills .insights > div.skill-css::before{
+    background: var(--color-css);
+}
+
+#skills .insights > div.skill-js::before{
+    background: var(--color-js);
+}
+
+#skills .insights > div.skill-git::before{
+    background: var(--color-git);
+}
+
+#skills .insights > div.skill-github::before{
+    background: var(--color-github);
+}
+
+@keyframes animate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#skills .insights > div::after{
+    content: '';
+    position: absolute;
+    background-color: var(--color-white);
+    inset: 5px;
+    border-radius: 28px;
 }
 
 #skills .insights > div i{
     font-size: 3rem;
     color: var(--color-html);
+    position: relative;
+    z-index: 1;
 }
 
 #skills .insights > div.skill-css i{
@@ -359,6 +403,8 @@ address{
     margin-top: 10px;
     font-size: 20px;
     font-weight: 600;
+    position: relative;
+    z-index: 1;
 }
 
 #skills .insights > div p span{
@@ -367,17 +413,21 @@ address{
 }
 
 #skills .insights > div .skill-outter-line{
-    width: 80%;
+    width: 75%;
     height: 10px;
     background-color: var(--color-info);
     margin-top: 10px;
     border-radius: 15px;
+    position: relative;
+    z-index: 1;
 }
 
 #skills .insights > div .skill-outter-line .skill-inner-line{
     height: 10px;
     background-color: var(--color-html);
     border-radius: 15px;
+    position: relative;
+    z-index: 1;
 }
 
 #skills .insights > div.skill-css .skill-outter-line .skill-inner-line{
@@ -443,10 +493,7 @@ address{
 
 #experience .job .tech-icons{
     font-size: 2.5rem;
-}
-
-#experience .job .tech-icons{
-    font-size: 2.5rem;
+    margin-top: -7px;
 }
 
 #experience .job .tech-icons .fa-html5{
