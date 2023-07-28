@@ -241,7 +241,7 @@ main{
 }
 
 #about .about-col .img-col img{
-    width: 100%;
+    width: 90%;
 }
 
 #about .about-col .info-col{
@@ -320,7 +320,6 @@ address{
     padding: 3rem 0;
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -350,5 +349,24 @@ address{
 
 #skills .insights > div p{
     margin-top: 10px;
+    font-size: 20px;
     font-weight: 600;
+}
+
+#skills .insights > div p span{
+    font-size: 15px;
+}
+
+#skills .insights > div .skill-outter-line{
+    width: 80%;
+    height: 10px;
+    background-color: var(--color-info);
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+#skills .insights > div .skill-outter-line .skill-inner-line{
+    height: 10px;
+    background-color: var(--color-html);
+    border-radius: 15px;
 }
