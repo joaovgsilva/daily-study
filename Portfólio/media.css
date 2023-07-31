@@ -26,9 +26,11 @@
         margin-left: 0;
     }
 
+    /* ===== SKILL SECTION ===== */
     #skills .insights{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
     }
 }
 
@@ -37,6 +39,7 @@
         font-size: 9px;
     }
     
+    /* ===== HOME SECTION ===== */
     #home .home-row h1{
         font-size: 1.5rem;
         letter-spacing: 0;
@@ -52,10 +55,12 @@
         border-bottom: 2px solid var(--color-primary);
     }
 
+    /* ===== GLOBAL SUB HEADING  ===== */
     .sub-heading{
         font-size: 1.5rem;
     }
 
+    /* ===== ABOUT SECTION ===== */
     #about .divider ~ p{
         font-size: .8rem;
         font-weight: 400;
@@ -94,17 +99,14 @@
         font-size: .8rem;
     }
 
+    /* ===== SKILL SECTION ===== */
     #skills .insights{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 20px;
+        grid-template-columns: repeat(1, auto);
+        align-items: center;
     }
 
-    #skills .insights > div{
-        width: 80%;
-        margin: 0 auto;
-    }
-
+    /* ===== EXPERIENCE SECTION ===== */
     #experience .job h3{
         font-size: 1.3rem;
     }

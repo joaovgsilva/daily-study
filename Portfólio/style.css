@@ -243,6 +243,8 @@ main{
 
 #about .about-col .img-col img{
     width: 90%;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
 }
 
 #about .about-col .info-col{
@@ -311,8 +313,10 @@ address{
 
 #skills .insights{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.6rem;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    gap: 1.7rem;
+    cursor: pointer;
 }
 
 #skills .insights:hover > :not(:hover){
@@ -322,17 +326,15 @@ address{
 
 #skills .insights > div{
     background-color: var(--color-white);
-    margin-top: 10px;
-    padding: 3rem 0;
+    width: 10.7rem;
+    padding: 2.7rem 0;
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
+    transition: .4s;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    transition: .35s;
-    cursor: pointer;
-
+    align-items: center;
     position: relative;
     overflow: hidden;
 }
@@ -340,8 +342,8 @@ address{
 #skills .insights > div::before{
     content: '';
     position: absolute;
-    width: 150px;
-    height: 350px;
+    width: 80px;
+    height: 200%;
     background: var(--color-html);
     animation: animate 7s linear infinite;
 }
@@ -407,47 +409,7 @@ address{
     z-index: 1;
 }
 
-#skills .insights > div p span{
-    font-size: 15px;
-    color: var(--color-gray);
-}
-
-#skills .insights > div .skill-outter-line{
-    width: 75%;
-    height: 10px;
-    background-color: var(--color-info);
-    margin-top: 10px;
-    border-radius: 15px;
-    position: relative;
-    z-index: 1;
-}
-
-#skills .insights > div .skill-outter-line .skill-inner-line{
-    height: 10px;
-    background-color: var(--color-html);
-    border-radius: 15px;
-    position: relative;
-    z-index: 1;
-}
-
-#skills .insights > div.skill-css .skill-outter-line .skill-inner-line{
-    background-color: var(--color-css);
-}
-
-#skills .insights > div.skill-js .skill-outter-line .skill-inner-line{
-    background-color: var(--color-js);
-}
-
-#skills .insights > div.skill-git .skill-outter-line .skill-inner-line{
-    background-color: var(--color-git);
-}
-
-#skills .insights > div.skill-github .skill-outter-line .skill-inner-line{
-    background-color: var(--color-github);
-}
-
 /* ===== START EXPERIENCE SECTION ===== */
-
 #experience{
     padding: 4rem 2rem;
     background-color: var(--color-white);
