@@ -469,3 +469,10 @@ address{
 #experience .job .tech-icons .fa-js{
     color: var(--color-js);
 }
+
+/* ===== START PROJECTS SECTION ===== */
+
+#project{
+    padding: 4rem 2rem;
+    background-color: var(--color-background-ligth);
+}
