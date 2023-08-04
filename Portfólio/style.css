@@ -476,3 +476,78 @@ address{
     padding: 4rem 2rem;
     background-color: var(--color-background-ligth);
 }
+
+#project .project-row{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.7rem;
+}
+
+#project .project-row .project-item{
+    position: relative;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#project .project-row .project-item .project-img img{
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    border: 2px solid var(--color-background-ligth-two);
+}
+
+#project .project-row .project-item:hover .project-img img{
+    opacity: .5;
+    border: 2px solid var(--color-primary);
+}
+
+#project .project-row .project-item .project-info{
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .7rem;
+    transform: scale(0);
+    transition: .7s;
+    border-radius: var(--card-border-radius);
+    visibility: hidden;
+}
+
+#project .project-row .project-item:hover .project-info{
+    transform: scale(1);
+    visibility: visible;
+}
+
+#project .project-row .project-item .project-info h3{
+    font-size: 1.5rem;
+}
+
+#project .project-row .project-item .project-info h4{
+    font-size: 1.1rem;
+    color: var(--color-primary);
+}
+
+#project .project-row .project-item .project-info a i{
+    font-size: 2.3rem;
+    margin-top: 5px;
+}
+
+#project .project-row .project-item .project-info a .fa-html5{
+    color: var(--color-html);
+}
+
+#project .project-row .project-item .project-info a .fa-css3-alt{
+    color: var(--color-css);
+}
+
+#project .project-row .project-item .project-info a .fa-js{
+    color: var(--color-js);
+}
