@@ -32,6 +32,11 @@
         grid-template-columns: repeat(3, auto);
         align-items: center;
     }
+
+    /* ===== PROJECT SECTION ===== */
+    #project .project-row{
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
 @media only screen and (max-width: 767px){ 
@@ -122,5 +127,10 @@
 
     #experience .job .tech-icons{
         font-size: 1.5rem;
+    }
+
+    /* ===== PROJECT SECTION ===== */
+    #project .project-row{
+        grid-template-columns: repeat(1, auto);
     }
 }
