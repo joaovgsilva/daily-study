@@ -312,9 +312,10 @@ address{
 }
 
 #skills .insights{
+    margin-top: 1.5rem;
     display: grid;
     grid-template-columns: repeat(5, auto);
-    justify-content: center;
+    justify-content: space-around;
     gap: 1.7rem;
     cursor: pointer;
 }
@@ -326,8 +327,8 @@ address{
 
 #skills .insights > div{
     background-color: var(--color-white);
-    width: 10.7rem;
-    padding: 2.7rem 0;
+    width: 9.7rem;
+    padding: 2rem 0;
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: .4s;

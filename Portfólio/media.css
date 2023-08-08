@@ -30,7 +30,6 @@
     #skills .insights{
         display: grid;
         grid-template-columns: repeat(3, auto);
-        align-items: center;
     }
 
     /* ===== PROJECT SECTION ===== */
@@ -46,13 +45,13 @@
     
     /* ===== HOME SECTION ===== */
     #home .home-row h1{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         letter-spacing: 0;
         line-height: 2.2rem;
     }
     
     #home .home-row p{
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 500;
     }
     
@@ -108,7 +107,7 @@
     #skills .insights{
         display: grid;
         grid-template-columns: repeat(1, auto);
-        align-items: center;
+        justify-content: center;
     }
 
     /* ===== EXPERIENCE SECTION ===== */
