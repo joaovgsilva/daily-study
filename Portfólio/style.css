@@ -13,9 +13,10 @@
     --color-info: #7d8da1;
     --color-html: #e44d26;
     --color-css: #264de4;
-    --color-js: #f7df1e;
     --color-git: #f05133;
     --color-github: #111;
+    --color-js: #f7df1e;
+    --color-react: #61dafb;
 
     --card-border-radius: 2rem;
 
@@ -353,16 +354,20 @@ address{
     background: var(--color-css);
 }
 
-#skills .insights > div.skill-js::before{
-    background: var(--color-js);
-}
-
 #skills .insights > div.skill-git::before{
     background: var(--color-git);
 }
 
 #skills .insights > div.skill-github::before{
     background: var(--color-github);
+}
+
+#skills .insights > div.skill-js::before{
+    background: var(--color-js);
+}
+
+#skills .insights > div.skill-react::before{
+    background: var(--color-react);
 }
 
 @keyframes animate{
@@ -390,16 +395,20 @@ address{
     color: var(--color-css);
 }
 
-#skills .insights > div.skill-js i{
-    color: var(--color-js);
-}
-
 #skills .insights > div.skill-git i{
     color: var(--color-git);
 }
 
 #skills .insights > div.skill-github i{
     color: var(--color-github);
+}
+
+#skills .insights > div.skill-js i{
+    color: var(--color-js);
+}
+
+#skills .insights > div.skill-react i{
+    color: var(--color-react);
 }
 
 #skills .insights > div p{
