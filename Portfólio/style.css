@@ -580,3 +580,8 @@ address{
 #project .project-row .project-item .project-info a .fa-js{
     color: var(--color-js);
 }
+
+/* ===== START CONTACT SECTION ===== */
+#contact{
+    padding: 4rem 2rem; 
+}
