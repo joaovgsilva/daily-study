@@ -36,6 +36,20 @@
     #project .project-row{
         grid-template-columns: repeat(2, auto);
     }
+
+    /* ===== CONTACT SECTION ===== */
+    #contact .contact-row{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #contact .contact-row .contact-right form{
+        align-items: center;
+    }
+
+    #contact .contact-row .contact-right form input[type=submit]{
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 767px){ 
@@ -131,5 +145,38 @@
     /* ===== PROJECT SECTION ===== */
     #project .project-row{
         grid-template-columns: repeat(1, auto);
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    #contact p{
+        font-size: .8rem;
+        font-weight: 400;
+    }
+
+    #contact .contact-row .contact-left .icon-box .icon i{
+        width: 40px;
+        height: 40px;
+        line-height: 2.3rem;
+        font-size: 17px;
+    }
+
+    #contact .contact-row .contact-left .icon-box .info h4{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    #contact .contact-row .contact-left .icon-box .info h4 + p{
+        color: var(--color-gray);
+        font-size: .75rem;
+        font-weight: 500;
+    }
+
+    #contact .contact-row .contact-right form input, 
+    #contact .contact-row .contact-right form textarea{
+        font-size: .8rem;
+    }
+
+    #contact .contact-row .contact-right form input[type=submit]{
+        font-size: .9rem;
     }
 }
