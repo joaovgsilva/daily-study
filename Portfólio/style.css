@@ -32,6 +32,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -626,7 +627,7 @@ address{
 }
 
 #contact .contact-row .contact-left .icon-box .info h4{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 

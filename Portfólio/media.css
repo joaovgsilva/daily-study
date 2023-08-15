@@ -167,7 +167,7 @@
     
     #contact .contact-row .contact-left .icon-box .info h4 + p{
         color: var(--color-gray);
-        font-size: .75rem;
+        font-size: .8rem;
         font-weight: 500;
     }
 
