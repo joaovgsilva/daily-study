@@ -585,3 +585,54 @@ address{
 #contact{
     padding: 4rem 2rem; 
 }
+
+#contact .contact-row{
+    margin-top: 1.7rem;
+    display: flex;
+    gap: 1.7rem;
+    width: 100%;
+}
+
+#contact .contact-row .contact-left{
+    flex-basis: 40%;
+    min-width: 40%;
+    background-color: var(--color-background-ligth);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 10%);
+    border-radius: var(--card-border-radius);
+    padding: 2rem;
+}
+
+#contact .contact-row .contact-left .icon-box{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+
+#contact .contact-row .contact-left .icon-box .icon i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    text-align: center;
+    line-height: 47px;
+    font-size: 20px;
+    color: var(--color-primary);
+    transition: .5s;
+}
+
+#contact .contact-row .contact-left .icon-box:hover .icon i{
+    background-color: var(--color-primary);
+    color: var(--color-background-ligth);
+}
+
+#contact .contact-row .contact-left .icon-box .info h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#contact .contact-row .contact-left .icon-box .info h4 + p{
+    color: var(--color-gray);
+    font-size: 1rem;
+    font-weight: 500;
+}
