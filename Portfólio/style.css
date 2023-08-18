@@ -491,7 +491,7 @@ address{
 #project .project-row{
     margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.7rem;
 }
 
@@ -528,7 +528,7 @@ address{
     align-items: flex-start;
     gap: .3rem;
     transform: scale(0);
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .7));
     visibility: hidden;
 }
 
