@@ -537,15 +537,23 @@ address{
     visibility: visible;
 }
 
-#project .project-row .project-item .project-info h3{
+#project .project-row .project-item .project-info h3 a{
     font-size: 1.5rem;
     color: var(--color-primary);
     transform: scale(0);
     transition: transform .3s;
 }
 
-#project .project-row .project-item:hover .project-info h3{
+#project .project-row .project-item .project-info h3 a:hover{
+    text-decoration: underline;
+}
+
+#project .project-row .project-item:hover .project-info h3 a{
     transform: scaleX(1);
+}
+
+#project .project-row .project-item .project-info h3 a i{
+    font-size: .7rem;
 }
 
 #project .project-row .project-item .project-info h4{
